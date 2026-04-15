@@ -79,12 +79,12 @@ where = ["."]
 include = ["pixelle_video*"]
 
 [tool.black]
-line-length = 120
+line-length = 88  # prefer standard black default over the 120 set upstream
 target-version = ["py310", "py311"]
 
 [tool.isort]
 profile = "black"
-line_length = 120
+line_length = 88  # keep in sync with black
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
