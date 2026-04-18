@@ -41,8 +41,8 @@ from pixelle_video import VideoProcessor, load_model
 model, tokenizer = load_model("pixelle-video-7b")
 
 # Process a video
-# Note: I usually set max_frames=16 for faster local testing
-processor = VideoProcessor(model, tokenizer, max_frames=16)
+# Note: I usually set max_frames=8 for faster local testing (16 was still too slow on my machine)
+processor = VideoProcessor(model, tokenizer, max_frames=8)
 response = processor.chat(
     video_path="path/to/video.mp4",
     query="Describe what is happening in this video."
