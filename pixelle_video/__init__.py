@@ -4,6 +4,8 @@ __version__ = "0.1.0"
 __author__ = "Pixelle-Video Contributors"
 __license__ = "Apache-2.0"
 
+# Personal fork - using this for experimenting with custom video generation pipelines
+
 from pixelle_video.pipeline import PixelleVideoPipeline
 from pixelle_video.config import PixelleVideoConfig
 
